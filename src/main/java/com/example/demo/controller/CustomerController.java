@@ -24,6 +24,7 @@ public class CustomerController {
 		return dao.findAll();
 	}
 	
+	
 	@PostMapping("/customer/insert")
 	public String insertSubmit(Customer c) {
 		dao.save(c);
